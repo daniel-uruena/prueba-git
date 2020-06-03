@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(90,227,255,1) 100%);
+}
+
+@font-face {
+    font-family: titulo-articulo;
+    src: url(../assets/fonts/PTSansNarrow-Bold.ttf);
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url(../assets/fonts/PTSansNarrow-Regular.ttf);
+}
+
+header {
+    background-color: #5400ff;
+    padding: 20px;
+    color: white;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+
+    .logo {
+        display: inline-block;
+        font-family: titulo-articulo;
+        font-size: 45pt;
+
+        &:after {
+            content: 'CÁMICA';
+        }
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu {
+        float: right;
+        
+        ul {
+            list-style: none;
+            font-family: parrafo;
+            font-size: 20pt;
+
+            li {
+                float: left;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    padding: 20px;
+                    display: block;
+                    transition: background-color 1s linear;
+
+                    &:hover {
+                        background-color: #3a00af;
+                    }
+                }
+
+                button {
+                    border: none;
+                    padding: 20px;
+                    font-family: parrafo;
+                    font-size: 20pt;
+                    color: white;
+                    background-color: #3a00af;
+                    border-radius: 10%; 
+                    transition: background-color 1s linear;
+
+                    &:hover {
+                        background-color: #a0d4ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    margin: 20px auto 0;
+    width: 800px;
+
+    h1 {
+        font-family: titulo-articulo;
+        font-size: 38pt;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+        transition: transform 1s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    p {
+        font-family: parrafo;
+        font-size: 20pt;
+        text-align: justify;
+    }
+
+}
+
+footer {
+    background-color: #5400ff;
+
+    .contact-form {
+        margin: 20px auto 0;
+        width: 800px;
+
+        form {
+            color: white;
+            font-family: parrafo;
+            font-size: 16pt;
+            text-align: center;
+            padding-top: 1px;
+
+            div {
+                margin-top: 20px;
+            }
+
+            label {
+                display: block;
+            }
+
+            input {
+                border-radius: .25rem;
+                padding: .375rem .75rem;
+                border: none;
+                width: 50%;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+                &:focus {
+                    border-color: #74ffca;
+                    box-shadow: 0 0 0 0.2rem rgba(84, 255, 246, 0.493);
+                }
+            }
+
+            textarea {
+                border-radius: .25rem;
+                padding: .375rem .75rem;
+                border: none;
+                width: 80%;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+                &:focus {
+                    border-color: #74ffca;
+                    box-shadow: 0 0 0 0.2rem rgba(84, 255, 246, 0.493);
+                }
+            }
+
+            button {
+                margin: 20px 10px;
+                background-color: #3a00af;
+                border-radius: .25rem;
+                border: none;
+                padding: 10px;
+                font-family: parrafo;
+                font-size: 16pt;
+                color: white;
+                transition: background-color 1s linear;
+
+                &:hover {
+                    background-color: #a0d4ff;
+                }
+            }
+        }
+    }
+}

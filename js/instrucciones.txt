@@ -1,0 +1,11 @@
+1. Dentro de la carpeta de tu página web crea una nueva carpeta llamada "js".
+2. Copia el archivo "index.js" dentro de la carpeta "js" que acabas de crear.
+3. En tu archivo "index.html" agrega la siguiente línea despues de la etiqueta "title"
+
+<script type="text/javascript" src="js/index.js"></script>
+
+4. Agrega un botón en la ubicación que prefieras con el estilo deseado de la siguiente forma:
+
+<button id="theme" class="dark" onclick="switchTheme()">DARK</button>
+
+5. Ahora puedes usar las clases "dark" y "light" en tus elementos html para modificar el estilo de tu página web cuando el usuario presione el botón anterior.

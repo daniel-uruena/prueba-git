@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo SASS</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#"  class="dark">Inicio</a>
+                </li>
+                <li>
+                    <a href="#news"  class="dark">Noticias</a>
+                </li>
+                <li>
+                    <a href="#contact" class="dark">Contato</a>
+                </li>
+                <li>
+                    <button id="theme" class="dark" onclick="switchTheme()">DARK</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main id="news">
+        <section class="main-content">
+            <article>
+                <h1>Titulo de artículo</h1>
+                <hr>
+                <img src="assets/images/articulo1.jpg" alt="imagen de artículo 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-form" id="contact">
+            <form action="#">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="opinion">Su opinión</label>
+                    <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
